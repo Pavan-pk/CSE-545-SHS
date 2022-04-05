@@ -1,0 +1,7 @@
+Post a transaction 				-> curl -d '{"transaction_id":"t_id_20", "user_id": "USER_ID","birth_date": "BIRTH_DATE","email": "EMAIL","transaction_type": "T_TYPE","user_type": "U_TYPE","transaction_details": "{\"T_DETAILS\":\"DETAILS\"}"}' -H 'Content-Type: application/json' -X POST http://localhost:8080/api/transaction
+
+Get all transaction 			-> curl http://localhost:8080/api/query
+
+Get transaction by parameter 	-> curl http://localhost:8080/api/query/parameter/value
+
+								-> parameters => [transaction_id, user_id, birth_date, email, transaction_type, user_type, transaction_details]
